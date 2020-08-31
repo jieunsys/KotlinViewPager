@@ -13,4 +13,9 @@ class ViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
         return 2
     }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        if(position == 0) return "주소1"
+        else return "핸드폰1"
+    }
 }
